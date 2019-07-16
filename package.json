@@ -4,12 +4,20 @@
   "description": "Very first Electron app",
   "main": "./app/main.js",
   "scripts": {
-      "start": "electron .",
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "cbh",
   "license": "ISC",
   "dependencies": {
     "electron": "^5.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanagan/bookmarker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chanagan/bookmarker/issues"
+  },
+  "homepage": "https://github.com/chanagan/bookmarker#readme"
 }
