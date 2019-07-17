@@ -1,10 +1,13 @@
-const {app, BrowserWindow} = require('electron');
+const { app, BrowserWindow } = require("electron");
 
 let mainWindow = null;
 
-app.on('ready', () => {
-    console.log('Hello from electron');
-    mainWindow = new BrowserWindow();
-    mainWindow.webContents.loadFile(`app/index.html`);
+app.on("ready", () => {
+  console.log("Hello from electron");
+  mainWindow = new BrowserWindow({
+    webPreferences: {
+      nodeIntegration: true
+    }
+  });
+  mainWindow.webContents.loadFile(`app/index.html`);
 });
-
