@@ -1,7 +1,6 @@
-<script>
-    const button = document.querySelector('.alert');
 
-    button.addEventListener('click', () => {
+    const button = document.querySelector('.alert');
+  
+  button.addEventListener('click', () => {
         alert(__dirname)
     });
-</script>
